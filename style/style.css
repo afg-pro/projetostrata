@@ -5,16 +5,22 @@ body{
 }
 
 a{
-    transition: color .2s linear;
+    transition: color .2s linear, border .2s linear;
     text-decoration: none;
     border-bottom: 3px dotted;
     color: #49BF9D;
 }
 
+a:hover{
+    border-bottom-color: transparent;
+}
+
+
+
 h1, h2, h3, h4, h5, h6{
     color: #787878;
     font-weight: normal;
-    margin: 0 0 1em;
+    margin: 1em 0;
 }
 
 h1{
@@ -67,6 +73,123 @@ code{
 
 pre code{
     display: block;
+}
+
+ ul, ol{
+    margin: 0;
+    padding: 0;
+    padding-left: 1.1em;
+ }
+
+ li{
+    padding-left: .5em;
+ }
+
+ a, i{
+    cursor: pointer;
+ }
+
+ .ul-alternate{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+
+ .ul-alternate li{
+    border-bottom: 1px solid #cccccca5;
+ }
+
+ .ul-alternate li:last-child{
+    border: none;
+ }
+
+.ul-icons{
+    font-size: 2em;
+    margin-right: 25px;
+    color: #49BF9D;
+}
+
+/*grid*/
+.row{
+    overflow: auto;
+}
+
+.col-2{
+    width: 50%;
+    float: left;
+}
+
+.col-2-3{
+    width: 65%;
+    float: left;
+}
+
+.col-1-3{
+    width: 32%;
+    float: left;
+    margin-left: 3%;
+}
+/**/
+
+.button-default{
+    background-color: #49BF9D;
+    border: 2px solid #49BF9D;
+    color: whitesmoke;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    font-size: .8em;
+    display: inline-block;
+}
+
+.button-stroke{
+    background-color: white;
+    border-color: #efefef;
+    color: inherit;
+}
+
+.button-small{
+    font-size: .65em;
+}
+
+.button-full{
+    display: block;
+    text-align: center;
+}
+
+.table{
+    width: 100%;
+    margin: 0 0 2em 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table td{
+    padding: .75em;
+}
+
+.table thead{
+    background-color: #ccc;
+    padding: .75em;
+}
+
+.table tr{
+    border-bottom: 1px solid #ccc;
+}
+
+.table tr:last-child{
+    border-bottom: none;
+}
+
+.table tr:nth-child(even){
+    background-color: rgba(196, 196, 196, 0.147);
+}/*even números ímpares*/
+
+.table-default tbody, .table-default tfoot{
+    border-top: 2px solid #666;
+}
+
+.table-alternate tbody td{
+    border: 1px solid #ccc;
 }
 
 .main-header{
